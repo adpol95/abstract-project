@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "GT America Bold";
+    src:  url("refrs/GT-America-Standard-Bold.woff2") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "GT America Medium";
+    src: url("refrs/GT-America-Standard-Medium.woff2") format("woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "GT America Regular";
+    src: url("refrs/GT-America-Standard-Regular.woff2") format("woff");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: "GT America Regular", sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 88px;
 }
 
-.App-link {
-  color: #61dafb;
+
+#leftSection {
+    flex: 1;
+    padding-left: 122px;
+    display: flex;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dividerLogoWText {
+    color: white;
+    font-size: 41px;
+    margin-left: 3px;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
+
+#textLogoHeadBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textLogoHead {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-left: 9px;
+    text-decoration: none;
+}
+#textLogoHead:hover {
+    text-decoration: underline;
+}
+
+#logoHead {
+    background: black;
+    display: flex;
+    height: 32.5px;
+    cursor: pointer;
+    transition: opacity 0.22s;
+}
+#logoHead:hover {
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+#rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 138px;
+}
+
+#leftBut,
+#rightBut {
+    padding: 9px 23px;
+    border-radius: 9px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#blockRightBut #rightBut{
+    background: #4C5FD5;
+    padding: 10px 32px;
+    font-family: "GT America Regular",sans-serif;
+    margin-left: 14px;
+    transition: background 0.15s, color 0.15s;
+}
+#blockRightBut #rightBut:hover{
+    background: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
+}
+
+#blockLeftBut #leftBut{
+    font-family: "GT America Regular", sans-serif;
+    background: rgba(0,0,0,1);
+    border: white 1px solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
