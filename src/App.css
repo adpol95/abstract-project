@@ -15,10 +15,6 @@ body, input, select, button {
     font-family: "GT America Standart", sans-serif;
 }
 
-body {
-    height:  2000px;
-}
-
 header {
     display: flex;
     flex-direction: row;
@@ -61,6 +57,7 @@ header {
     font-size: 24px;
     text-decoration: none;
 }
+
 .textLogoHead:hover {
     text-decoration: underline;
 }
@@ -72,6 +69,7 @@ header {
     cursor: pointer;
     transition: opacity 0.22s;
 }
+
 .logoHead:hover {
     opacity: 80%;
 }
@@ -82,7 +80,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    padding-right: 138px;
+    padding-right: 120px;
 }
 
 .leftBut,
@@ -94,31 +92,26 @@ header {
     cursor: pointer;
 }
 
-.blockRightBut .rightBut{
+.blockRightBut .rightBut {
     background: #4C5FD5;
     padding: 10px 32px;
     margin-left: 14px;
     transition: background 0.15s, color 0.15s;
 }
+
 .blockRightBut .rightBut:hover {
-    background: rgba(255,255,255,1);
-    color: rgba(0,0,0,1);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
-.blockLeftBut .leftBut{
-    background: rgba(0,0,0,1);
+.blockLeftBut .leftBut {
+    background: rgba(0, 0, 0, 0);
     border: white 1px solid;
 }
 
 
-
-
-
-
-
-
 .searchingArea {
-    height: 297px;
+    height: 300px;
     background: #dadbf1;
     display: flex;
     align-items: center;
@@ -145,6 +138,7 @@ header {
     transition: border 0.15s;
     border: 1px solid black;
 }
+
 .mainSearchingBar input:hover,
 .mainSearchingBar input:focus {
     border: 1px solid #4C5FD5;
@@ -153,26 +147,69 @@ header {
 
 }
 
-.myClass1 {
+.rightArrowSearchBar {
     content: url("./refrs/arrow-right-33-64.png");
     position: absolute;
     width: 28px;
     right: 15px;
     transition: content 0.15s;
+    cursor: pointer;
 }
 
 
-.myClass1:hover {
+.rightArrowSearchBar:hover {
     content: url("./refrs/arrow-right-33-64-blue.png");
 }
 
-.mainSearchingBar:hover .myClass1 {
+.mainSearchingBar:hover .rightArrowSearchBar {
     content: url("./refrs/arrow-right-33-64-blue.png");
 }
 
 
+.navArea {
+    padding: 180px 210px 128px 210px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+}
 
+.variationsHelp {
+    display: flex;
+}
 
+.variationsHelp img {
+    width: 90px;
+    height: 90px;
+    margin-right: 26px;
+}
+
+.textOfHelp {
+    font-size: 24px;
+}
+
+.textOfHelp p {
+    margin: 18px 0;
+}
+
+.textOfHelp .mainName {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.textOfHelp a {
+    color: #4C5FD5;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.textOfHelp a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: black;
+    height: 400px;
+}
 
 
 
