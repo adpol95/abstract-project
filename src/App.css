@@ -1,21 +1,24 @@
 @font-face {
-    font-family: "GT America Bold";
-    src:  url("refrs/GT-America-Standard-Bold.woff2") format("woff");
+    font-family: GT America Standart;
+    src: url("./refrs/fonts/GT-America/GT-America-Standard-Regular-Trial.woff2");
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "GT America Medium";
-    src: url("refrs/GT-America-Standard-Medium.woff2") format("woff");
+    font-family: GT America Standart;
+    src: url("./refrs/fonts/GT-America/GT-America-Standard-Bold-Trial.woff2");
+    font-weight: bold;
 }
 
-@font-face {
-    font-family: "GT America Regular";
-    src: url("refrs/GT-America-Standard-Regular.woff2") format("woff");
+
+body, input, select, button {
+    font-family: "GT America Standart", sans-serif;
 }
 
 body {
-    font-family: "GT America Regular", sans-serif;
+    height:  2000px;
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -25,61 +28,55 @@ header {
     height: 88px;
 }
 
-
-#leftSection {
+.leftSection {
     flex: 1;
     padding-left: 122px;
     display: flex;
     align-items: center;
 }
 
-#dividerLogoWText {
+.dividerLogoWText {
     color: white;
     font-size: 41px;
-    margin-left: 3px;
+    margin: 0 3px;
     font-weight: 200;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
-#textLogoHeadBlock {
+.textLogoHeadBlock {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
-#textLogoHead {
+.textLogoHead {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    margin-left: 9px;
     text-decoration: none;
 }
-#textLogoHead:hover {
+.textLogoHead:hover {
     text-decoration: underline;
 }
 
-#logoHead {
+.logoHead {
     background: black;
     display: flex;
     height: 32.5px;
     cursor: pointer;
     transition: opacity 0.22s;
 }
-#logoHead:hover {
+.logoHead:hover {
     opacity: 80%;
 }
 
-
-
-
-
-
-
-#rightSection {
+.rightSection {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -88,8 +85,8 @@ header {
     padding-right: 138px;
 }
 
-#leftBut,
-#rightBut {
+.leftBut,
+.rightBut {
     padding: 9px 23px;
     border-radius: 9px;
     color: white;
@@ -97,26 +94,81 @@ header {
     cursor: pointer;
 }
 
-#blockRightBut #rightBut{
+.blockRightBut .rightBut{
     background: #4C5FD5;
     padding: 10px 32px;
-    font-family: "GT America Regular",sans-serif;
     margin-left: 14px;
     transition: background 0.15s, color 0.15s;
 }
-#blockRightBut #rightBut:hover{
+.blockRightBut .rightBut:hover {
     background: rgba(255,255,255,1);
     color: rgba(0,0,0,1);
 }
 
-#blockLeftBut #leftBut{
-    font-family: "GT America Regular", sans-serif;
+.blockLeftBut .leftBut{
     background: rgba(0,0,0,1);
     border: white 1px solid;
-
 }
 
 
+
+
+
+
+
+
+.searchingArea {
+    height: 297px;
+    background: #dadbf1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 80px;
+    padding-top: 96px;
+    letter-spacing: -4px;
+}
+
+.mainSearchingBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainSearchingBar input {
+    padding: 20px 485px 20px 15px;
+    border-radius: 3px;
+    font-size: 19.5px;
+    transition: border 0.15s;
+    border: 1px solid black;
+}
+.mainSearchingBar input:hover,
+.mainSearchingBar input:focus {
+    border: 1px solid #4C5FD5;
+    outline-offset: 0;
+    outline: none;
+
+}
+
+.myClass1 {
+    content: url("./refrs/arrow-right-33-64.png");
+    position: absolute;
+    width: 28px;
+    right: 15px;
+    transition: content 0.15s;
+}
+
+
+.myClass1:hover {
+    content: url("./refrs/arrow-right-33-64-blue.png");
+}
+
+.mainSearchingBar:hover .myClass1 {
+    content: url("./refrs/arrow-right-33-64-blue.png");
+}
 
 
 
