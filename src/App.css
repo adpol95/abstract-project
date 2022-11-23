@@ -167,7 +167,7 @@ header {
 
 
 .navArea {
-    padding: 180px 210px 128px 210px ;
+    padding: 180px 210px 128px 210px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 100px;
@@ -208,8 +208,60 @@ header {
 
 footer {
     background: black;
+    display: flex;
+    color: white;
+    justify-content: center;
     height: 400px;
 }
+
+.firstGroupFoot {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 120px;
+}
+.firstGroupFoot a {
+    text-decoration: none;
+    color: white;
+    margin: 2px;
+}
+.firstGroupFoot a:hover {
+    text-decoration: underline;
+}
+
+.firstGroupFoot b {
+    margin-top: 30px;
+}
+
+.containerSecGrFt {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex: 1;
+    padding-bottom: 60px;
+    padding-right: 120px;
+}
+
+.secondGroupFoot img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: left;
+    margin-bottom: 20px;
+}
+
+.secondGroupFoot div {
+    margin: 2px;
+    font-size: 20px;
+}
+
+.topicName {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
 
 
 

@@ -142,7 +142,94 @@ function App() {
             </main>
 
             <footer>
+                <div className="firstGroupFoot">
+                    <p className="topicName">
+                        Abstract
+                    </p>
+                    <a href="http://localhost:3000/">
+                        Start Trial
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Pricing
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Download
+                    </a>
+                </div>
+                <div className="firstGroupFoot">
+                    <p className="topicName">
+                        Resources
+                    </p>
+                    <a href="http://localhost:3000/">
+                        Blog
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Help Center
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Release Notes
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Status
+                    </a>
+                </div>
+                <div className="firstGroupFoot">
+                    <p className="topicName">
+                        Community
+                    </p>
+                    <a href="http://localhost:3000/">
+                        Twitter
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Linkedin
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Facebook
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Dribbble
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Podcast
+                    </a>
+                </div>
+                <div className="firstGroupFoot">
+                    <p className="topicName">
+                        Company
+                    </p>
+                    <a href="http://localhost:3000/">
+                        About Us
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Careers
+                    </a>
+                    <a href="http://localhost:3000/">
+                        Legal
+                    </a>
+                    <b>
+                        Contact Us
+                    </b>
 
+                    <a href="http://localhost:3000/">
+                        info@abstract.com
+                    </a>
+                </div>
+                <div className="containerSecGrFt">
+                    <div className="secondGroupFoot">
+                        <img
+                            src="https://theme.zdassets.com/theme_assets/2197739/df1f3a3595ad6f2e809942c0cbfa85f84156dd61.svg"
+                            alt="logo"/>
+                        <div>
+                            {"©"} Copyright 2022
+                        </div>
+                        <div>
+                            Abstract Studio Design, Inc.
+                        </div>
+                        <div>
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
             </footer>
 
         </div>
