@@ -5,13 +5,15 @@ import puzzle from './refrs/50d0db451c0e1e66e1caddd142986fcf6792ca05.png';
 import dollar from './refrs/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png';
 import key from './refrs/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png';
 import message from './refrs/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png';
+import {useState} from "react";
 
 function App() {
 
+    const [burgerState, setBurgerState] = useState(true)
 
     return (
         <div className="App">
-            <header>
+            <header className={burgerState ? "header1" : "header1Inactive"}>
                 <div className="leftSection">
                     <div className="logoHead">
                         <img
@@ -28,7 +30,7 @@ function App() {
                     </div>
                 </div>
 
-                <div className="rightSection">
+                <div className="rightSectionFull">
                     <div className="blockLeftBut">
                         <button className="leftBut">
                             Submit a request
@@ -40,7 +42,26 @@ function App() {
                         </button>
                     </div>
                 </div>
+                <div className="rightSectionPart" onClick={() => setBurgerState(!burgerState)}>
+                    <span className={burgerState ? "log1-1" : "log1-2"}>
+
+                    </span>
+                        <span className={burgerState ? "log2-1" : "log2-2"}>
+
+                    </span>
+                        <span className={burgerState ? "log3-1" : "log3-2"}>
+
+                    </span>
+                </div>
             </header>
+            <div className={burgerState ? "header2Inactive" : "header2"}>
+                <div className="adderHeadTopText">
+                    Submit a request
+                </div>
+                <div className="adderHeadBottomText">
+                    Sign in
+                </div>
+            </div>
 
             <main>
                 <section className="searchingArea">
