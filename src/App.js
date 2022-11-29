@@ -5,11 +5,12 @@ import puzzle from './refrs/50d0db451c0e1e66e1caddd142986fcf6792ca05.png';
 import dollar from './refrs/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png';
 import key from './refrs/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png';
 import message from './refrs/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png';
+import searching from './refrs/search-icon-png-21.png';
 import {useState} from "react";
 
 function App() {
-
     const [burgerState, setBurgerState] = useState(true)
+    const [searchingState, setSearchingState] = useState(true);
 
     return (
         <div className="App">
@@ -42,7 +43,13 @@ function App() {
                         </button>
                     </div>
                 </div>
-                <div className="rightSectionPart" onClick={() => setBurgerState(!burgerState)}>
+                <div className="rightSectionPart">
+                    <div>
+                        <div className="searchingIconTop" onClick={() => setSearchingState(!searchingState)}>
+                            <img src={searching} alt="searching"/>
+                        </div>
+                    </div>
+                    <div className="burgerZone" onClick={() => setBurgerState(!burgerState)}>
                     <span className={burgerState ? "log1-1" : "log1-2"}>
 
                     </span>
@@ -50,19 +57,29 @@ function App() {
 
                     </span>
                         <span className={burgerState ? "log3-1" : "log3-2"}>
-
                     </span>
+                    </div>
+                </div>
+                <div className={searchingState ? "searchingHeaderOff" : "searchingHeaderOn"}>
+                    <input type="text" placeholder="Search"/>
+                    <div className="crossMain" onClick={() => setSearchingState(!searchingState)}>
+                        <div className="cross1">
+
+                        </div>
+                        <div className="cross2">
+
+                        </div>
+                    </div>
+                </div>
+                <div className={burgerState ? "header2Inactive" : "header2"}>
+                    <div className="adderHeadTopText">
+                        Submit a request
+                    </div>
+                    <div className="adderHeadBottomText">
+                        Sign in
+                    </div>
                 </div>
             </header>
-            <div className={burgerState ? "header2Inactive" : "header2"}>
-                <div className="adderHeadTopText">
-                    Submit a request
-                </div>
-                <div className="adderHeadBottomText">
-                    Sign in
-                </div>
-            </div>
-
             <main>
                 <section className="searchingArea">
                     <div className="descSearchText">
@@ -75,7 +92,9 @@ function App() {
                 </section>
                 <section className="navArea">
                     <div className="variationsHelp">
-                        <img src={chainVar} alt="chain"/>
+                        <div className="varImgOverall">
+                            <img src={chainVar} alt="chain"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Using Abstract
@@ -89,7 +108,9 @@ function App() {
                         </div>
                     </div>
                     <div className="variationsHelp">
-                        <img src={team} alt="team"/>
+                        <div className="varImgOverall">
+                            <img src={team} alt="team"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Manage your account
@@ -103,7 +124,9 @@ function App() {
                         </div>
                     </div>
                     <div className="variationsHelp">
+                        <div className="varImgOverall">
                         <img src={puzzle} alt="puzzle"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Manage organizations, teams, and products
@@ -117,7 +140,9 @@ function App() {
                         </div>
                     </div>
                     <div className="variationsHelp">
+                        <div className="varImgOverall">
                         <img src={dollar} alt="dollar"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Manage bills
@@ -131,7 +156,9 @@ function App() {
                         </div>
                     </div>
                     <div className="variationsHelp">
+                        <div className="varImgOverall">
                         <img src={key} alt="key"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Authenticate to Abstract
@@ -145,7 +172,9 @@ function App() {
                         </div>
                     </div>
                     <div className="variationsHelp">
+                        <div className="varImgOverall">
                         <img src={message} alt="message"/>
+                        </div>
                         <div className="textOfHelp">
                             <p className="mainName">
                                 Abstract support
@@ -161,7 +190,6 @@ function App() {
                 </section>
 
             </main>
-
             <footer>
                 <div className="firstGroupFoot">
                     <p className="topicName">
