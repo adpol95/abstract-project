@@ -10,7 +10,7 @@ import questionMark from './refrs/question-mark-regular-192.png';
 import {useState} from "react";
 
 function App() {
-    const [burgerState, setBurgerState] = useState(true)
+    const [burgerState, setBurgerState] = useState(true);
     const [searchingState, setSearchingState] = useState(true);
 
     return (
