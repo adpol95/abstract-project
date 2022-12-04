@@ -6,6 +6,7 @@ import dollar from './refrs/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png';
 import key from './refrs/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png';
 import message from './refrs/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png';
 import searching from './refrs/search-icon-png-21.png';
+import questionMark from './refrs/question-mark-regular-192.png';
 import {useState} from "react";
 
 function App() {
@@ -125,7 +126,7 @@ function App() {
                     </div>
                     <div className="variationsHelp">
                         <div className="varImgOverall">
-                        <img src={puzzle} alt="puzzle"/>
+                            <img src={puzzle} alt="puzzle"/>
                         </div>
                         <div className="textOfHelp">
                             <p className="mainName">
@@ -141,7 +142,7 @@ function App() {
                     </div>
                     <div className="variationsHelp">
                         <div className="varImgOverall">
-                        <img src={dollar} alt="dollar"/>
+                            <img src={dollar} alt="dollar"/>
                         </div>
                         <div className="textOfHelp">
                             <p className="mainName">
@@ -157,7 +158,7 @@ function App() {
                     </div>
                     <div className="variationsHelp">
                         <div className="varImgOverall">
-                        <img src={key} alt="key"/>
+                            <img src={key} alt="key"/>
                         </div>
                         <div className="textOfHelp">
                             <p className="mainName">
@@ -173,7 +174,7 @@ function App() {
                     </div>
                     <div className="variationsHelp">
                         <div className="varImgOverall">
-                        <img src={message} alt="message"/>
+                            <img src={message} alt="message"/>
                         </div>
                         <div className="textOfHelp">
                             <p className="mainName">
@@ -280,7 +281,16 @@ function App() {
                     </div>
                 </div>
             </footer>
-
+            <div className="helperIcon">
+                <div className="circleHelp">
+                    <div className="circleHelp2">
+                        <img src={questionMark} alt=""/>
+                    </div>
+                </div>
+                <div className="textHelp">
+                    Help
+                </div>
+            </div>
         </div>
     );
 }

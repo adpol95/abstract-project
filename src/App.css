@@ -412,6 +412,7 @@ body, input, select, button {
     align-content: center;
     justify-content: center;
 }
+
 .varImgOverall img {
     width: 100%;
     object-fit: contain;
@@ -495,7 +496,42 @@ footer {
     margin-bottom: 14px;
 }
 
+.helperIcon {
+    background: #4C5FD5;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 16px;
+    width: 86px;
+    border-radius: 26px;
+    padding: 13px 10px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    font-size: 15px;
+}
 
+.circleHelp {
+    background: #ffffff;
+    display: flex;
+    border-radius: 12px;
+    height: 16px;
+    padding: 2px;
+}
 
+.circleHelp2 {
+    border-radius: 12px;
+    background: #4C5FD5;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.textHelp {
+    margin-left: 6px;
+    margin-top: 1.5px;
+}
 
 
